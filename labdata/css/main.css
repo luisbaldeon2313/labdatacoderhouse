@@ -47,9 +47,10 @@ body {
 }
 .containerr .nav,
 .containerr .footer {
-  background: hsl(206, 21%, 15%);
+  background:white;
   grid-column: 1/4;
   width: 100%;
+  size: 5px;
 }
 .containerr > .content {
   grid-column: span 3;
@@ -151,5 +152,5 @@ text-align: center;
 .containerr .card:hover{
   transform: translateY(-15px);
   box-shadow:0 12px 16px rgba(0, 0, 0, 0.2);
-    
+
 }
