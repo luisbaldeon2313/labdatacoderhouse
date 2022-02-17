@@ -41,43 +41,21 @@
 
   <body>
     <div class="containerr">
-      <nav class="navbar navbar-expand-lg navbar-light containerr">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">LABDATA</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="index.html"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="servicios.html">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="clientes.html">Clientes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contactanos.html">Contactanos</a>
-              </li>
+      <header class="header">
+        <div class="container logo-nav-container">
+          <a href="#" class="logo">LABDATA</a>
+          <span class="menu-icon">Ver Menú</span>
+          <nav class="navigation"> 
+            <ul class="show">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="#">Nosotros</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+              <li><a href="clientes.html">Clientes</a></li>
+              <li><a href="contactanos.html">Contactenos</a></li>
             </ul>
-          </div>
+          </nav>
         </div>
-      </nav>
+      </header>
 
       <main class="content">
         <!--Video  parcel principal -->
@@ -95,62 +73,57 @@
         <!--Aplicando Grids -->
         <article class="article">
           <h1>¡CONOCENOS!</h1>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <img
-                  src="https://static.vecteezy.com/system/resources/previews/002/099/860/original/coworking-team-training-discussion-business-concept-team-young-businesspeople-coworkers-partners-colleagues-talking-working-together-teamwork-and-office-meeting-vector.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="col-md-6">
-                <h2>Nuestro compromiso</h2>
-                <h5>
-                  Aprovechar los avances tecnológicos y aplicarlos a la vida de
-                  las empresas
-                </h5>
-              </div>
-              <div class="col-md-6">
-                <br />
-                <h2>Nuestra proyección</h2>
-                <h5>
-                  Impulsar el desarrollo empresarial y hacer de Latinoamérica un
-                  referente en tecnología
-                </h5>
-              </div>
-              <div class="col-md-6">
-                <br />
-                <img
-                  src="https://diegonoriega.co/wp-content/uploads/2020/12/proyeccion-y-estrategia.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="col-md-6">
-                <br />
-                <img
-                  src="https://static.vecteezy.com/system/resources/previews/002/183/624/non_2x/drawing-up-a-strategic-plan-by-a-group-of-young-businessmen-vector.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="col-md-6">
-                <br />
-                <h2>Nuestro equipo</h2>
-                <h5>
-                  Es el motor detrás de cada idea innovadora, siempre
-                  comprometidos por el bien común
-                </h5>
-              </div>
+          <div class="nosotros">
+            <div>
+              <h1 class="conocemostitulo">Totalmente autogestionado y sin servidores
+              </h1>
+              <p class="pconocemos">Ahorra tiempo sin configurar servidores y empieza ya con tus frameworks, librerías o lenguajes preferidos.
+              </p>
+            </div>
+            <div >
+              <h1  class="conocemostitulo" >Escalabilidad automática y analítica avanzada
+              </h1>
+              <p class="pconocemos">Potencia ilimitada para esos momentos de altísima demanda; no solo en procesamiento, sino también en análisis de datos.
+              </p>
+            </div>
+            <div>
+              <h1 class="conocemostitulo" >Integración nativa con IoT, Machine Learning e Inteligencia artificial
+              </h1>
+              <p class="pconocemos">Amplía las capacidades e integra dispositivos, procesamiento, análisis y aprendizaje automático a tu negocio.
+              </p>
+            </div>
+            <div>
+              <h1 class="conocemostitulo" >Instituciones del Estado
+              </h1>
+              <p class="pconocemos">Gestionar la información del territorio y planear estrategias requiere de información actualizada de todo el país.
+              </p>
             </div>
           </div>
         </article>
       </main>
       <!--Pie de pagina -->
       <footer class="footer">
-        <h4>Nuestras Redes Sociales</h4>
-        <p>Facebook</p>
-        <p>Instagram</p>
-        <p>Twitter</p>
-        <p>Youtube</p>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h1>Redes Sociales</h1>
+             <h5>Facebook</h5>
+             <h5>Instagram</h5>
+             <h5>Facebook</h5>
+             <h5>Youtube</h5>
+            </div>
+            <div class="col-md-4">
+              <h1>Ubicanos</h1>
+              <h5>Jr talara 155, San Gabriel</h5>
+              <h5>Villa Maria del Triunfo, Lima-Perú </h5>
+            </div>
+            <div class="col-md-4">
+              <h1>Contacto</h1>
+              <h5>+ 51 977713388</h5>
+              <h5>luisbaldeon2313@gmail.com</h5>
+              <h5>sistemas@labdata.com</h5>
+            </div>
+        </div>
       </footer>
     </div>
   </body>

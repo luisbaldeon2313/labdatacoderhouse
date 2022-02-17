@@ -56,7 +56,7 @@ body {
   grid-column: span 3;
 }
 .content > .article {
-  background: #808e9b; 
+  background: #808e9b;
   color: #dfe6e9;
 }
 .content > .articlee {
@@ -86,31 +86,14 @@ textarea {
   border-radius: 9px black;
   border: 1px solid black;
 }
-article h1 {
-  text-align: center;
-  font-family: "Mukta", sans-serif;
-}
-/*
-article p {
-  text-align: center;
-}*/
 .iframe-fluid {
   width: 100%;
   height: auto;
 }
-article div img {
-  width: 100%;
-}
-article div h2,
-h5 {
-  margin-top: 50px;
-  vertical-align: middle;
-  text-align: center;
-  font-family: "Mukta", sans-serif;
-  font-family: "Roboto Condensed", sans-serif;
-}
 .clientes {
   margin-top: 20px;
+  width: 50%;
+  border-radius: 20px;
 }
 section div h1 {
   text-align: center;
@@ -166,57 +149,98 @@ span {
   grid-template-columns: 1fr;
   gap: 15px;
   margin: auto;
-	width: 80%;
-  padding-bottom: 30px;  
+  width: 80%;
+  padding-bottom: 30px;
 }
 
 .card {
-height: 400px;
-display: block;
+  height: 400px;
+}
+.card:hover{
+  height: 400px;
+  width: 100%;
+  box-shadow: inset 300px 0 0 0 #f2e2df;
+  color: white;
 }
 
-.card-image{
-
- height: 170px;
+.card-image {
+  height: 170px;
+  object-fit: cover;
+  
+}
+.titulocard{
+  font-family: monospace;
+  color:black;
+  text-shadow: black;
+  text-align: center;
+}
+.containercard, .article, div, p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #4a4a4a;
 
 }
+.titulosectores{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.ppresentacion{
+  color: white;
+  font-size: 20px;
+}
+.hpresentacion{
+  font-family: monospace;
+  font-weight: bold;;
+}
+.nosotros{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin: auto;
+  
+}
+.conocemostitulo{
+  text-transform:uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+.pconocemos{
+  color: black;
+  font-family: sans-serif;  
+}
+.serviciosgrid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
 
-@media (min-width: 480px){  
+
+@media (min-width: 480px) {
   .containercard {
     gap: 15px;
     width: 70%;
   }
 }
 
-@media (min-width: 500px){
+@media (min-width: 500px) {
   .containercard {
     width: 70%;
   }
 }
 
-@media (min-width: 600px){
+@media (min-width: 600px) {
   .containercard {
     grid-template-columns: 1fr 1fr;
     width: 90%;
-    gap: 15px
+    gap: 15px;
   }
 }
 
-@media (min-width: 700px){
+@media (min-width: 700px) {
   .containercard {
     width: 80%;
-    
   }
-}
 
-@media (min-width: 850px){
-  .containercard {
-    width: 95%;
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media only screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .menu-icon {
     display: block;
     cursor: pointer;
@@ -248,5 +272,26 @@ display: block;
   .logo {
     letter-spacing: 1px;
     font-size: 1.3em;
+  }
+}
+@media (min-width: 768px) {
+  .containercard {
+    width: 80%;
+  }
+  .navigation ul li a {
+    display: block;
+    padding: 0.5em;
+    align-items: baseline;
+    font-size: large;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+  }
+
+}
+
+@media (min-width: 850px) {
+  .containercard {
+    width: 95%;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
