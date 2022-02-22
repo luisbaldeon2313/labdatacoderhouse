@@ -212,8 +212,50 @@ span {
   display:grid;
   grid-template-columns: 1fr 1fr;
 }
+.footer2{
+  
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 15px;
+  width: 100%;
+  justify-content:center;
+}
+.redessociales{
+  text-align: center;
+}
+.redessocialesimg{
+  width:25px;
+  margin-left: 100px;
+}
+#imapa{
 
+  width:25px
 
+}
+.maingrid{
+  display: grid;
+  gap: 15;
+  grid-template-columns: 2fr 2fr;
+
+}
+#clientesform{
+  padding-left: 30px;
+}
+.main2{
+  margin-top: 20px;
+  display: grid;
+  gap: 15px;
+  grid-template-columns:1fr 1fr 1fr ;
+}
+.card-img-clientes{
+  width: 100%;
+  background-size: cover;
+  height: 50%;
+  
+}
+.btnclientes{
+  width: 50%;
+}
 @media (min-width: 480px) {
   .containercard {
     gap: 15px;
