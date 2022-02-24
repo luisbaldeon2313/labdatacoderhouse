@@ -1,0 +1,351 @@
+$general:black;
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background: radial-gradient($general 3px, transparent 4px),
+      radial-gradient($general 3px, transparent 4px),
+      linear-gradient(#fff 4px, transparent 0),
+      linear-gradient(
+        45deg,
+        transparent 74px,
+        transparent 75px,
+        #a4a4a4 75px,
+        #a4a4a4 76px,
+        transparent 77px,
+        transparent 109px
+      ),
+      linear-gradient(
+        -45deg,
+        transparent 75px,
+        transparent 76px,
+        #a4a4a4 76px,
+        #a4a4a4 77px,
+        transparent 78px,
+        transparent 109px
+      ),
+      #fff;
+    background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    font-family: "Mukta", sans-serif;
+  }
+  .containerr {
+    background-color: white;
+    width: 100%;
+    max-width: 1000px;
+    margin: 2em auto;
+    display: grid;
+    gap: 1.6em;
+  }
+  .containerr > .header,
+  .containerr > .content,
+  .containerr > footer,
+  .containerr > div {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid $general;
+  }
+  .containerr .header,
+  .containerr .footer {
+    background: white;
+    grid-column: 1/4;
+    width: 100%;
+    size: 5px;
+  }
+  .containerr > .content {
+    grid-column: span 3;
+  }
+  .content > .article {
+    background: #808e9b;
+    color: #dfe6e9;
+  }
+  .content > .articlee {
+    background: white;
+    padding: 50px;
+    margin-top: 3px;
+  }
+  .containerr .sidebar {
+    grid-column: span 3;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid $general;
+  }
+  .content .article h1,
+  .content .article p {
+    padding: 10px;
+  }
+  input {
+    border: 1px solid $general;
+    width: 50%;
+    margin: 8px 0;
+    height: 30px;
+    border-radius: 9px $general;
+  }
+  textarea {
+    resize: none;
+    border-radius: 9px $general;
+    border: 1px solid $general;
+  }
+  .iframe-fluid {
+    width: 100%;
+    height: auto;
+  }
+  .clientes {
+    margin-top: 20px;
+    width: 50%;
+    border-radius: 20px;
+  }
+  section div h1 {
+    text-align: center;
+  }
+  .header {
+    background: #333;
+    color: white;
+    padding: 2rem 0;
+  }
+  .header a {
+    color: rgb(44, 38, 38);
+    text-decoration: none;
+  }
+  .logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .navigation ul li {
+    display: inline-block;
+    color: $general;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  .navigation ul li a {
+    display: block;
+    padding: 0.025 rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+  }
+  .navigation ul li a:hover {
+    background: #4a4a4a;
+  }
+  .logo {
+    letter-spacing: 1px;
+    font-size: 1.3em;
+  }
+  .menu-icon {
+    display: none;
+  }
+  span {
+    color: $general;
+  }
+  .containercard {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin: auto;
+    width: 80%;
+    padding-bottom: 30px;
+  }
+  
+  .card {
+    height: 400px;
+  }
+  .card:hover{
+    height: 400px;
+    width: 100%;
+    box-shadow: inset 300px 0 0 0 #f2e2df;
+    color: white;
+  }
+  
+  .card-image {
+    height: 170px;
+    object-fit: cover;
+    
+  }
+  .titulocard{
+    font-family: monospace;
+    color:$general;
+    text-shadow: black;
+    text-align: center;
+  }
+  .containercard, .article, div, p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #4a4a4a;
+  
+  }
+  .titulosectores{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .ppresentacion{
+    color: white;
+    font-size: 20px;
+  }
+  .hpresentacion{
+    font-family: monospace;
+    font-weight: bold;;
+  }
+  .nosotros{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: auto;
+    
+  }
+  .conocemostitulo{
+    text-transform:uppercase;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .pconocemos{
+    color: $general;
+    font-family: sans-serif;  
+  }
+  .serviciosgrid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer2{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    width: 100%;
+    justify-content:center;
+  }
+  .redessociales{
+    text-align: center;
+  }
+  .redessocialesimg{
+    width:25px;
+    margin-left: 100px;
+  }
+  #imapa{
+  
+    width:25px
+  
+  }
+  .maingrid{
+    display: grid;
+    gap: 15;
+    grid-template-columns: 2fr 2fr;
+  
+  }
+  #clientesform{
+    padding-left: 30px;
+  }
+  .main2{
+    margin-top: 20px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns:1fr 1fr 1fr ;
+  }
+  .card-img-clientes{
+    width: 100%;
+    background-size: cover;
+    height: 50%;
+    
+  }
+  .btnclientes{
+    width: 50%;
+  }
+  @media (min-width: 480px) {
+    .containercard {
+      gap: 15px;
+      width: 70%;
+    }
+  }
+  @media (min-width: 500px) {
+    .containercard {
+      width: 70%;
+    }
+  }
+  @media (min-width: 600px) {
+    .containercard {
+      grid-template-columns: 1fr 1fr;
+      width: 90%;
+      gap: 15px;
+    }
+  }
+  @media (min-width: 700px) {
+    .containercard {
+      width: 80%;
+    }
+  }
+  @media (min-width: 600px) {
+    .containercard {
+      grid-template-columns: 1fr 1fr;
+      width: 90%;
+      gap: 15px;
+    }
+  }
+  
+  @media (min-width: 700px) {
+    .containercard {
+      width: 80%;
+    }
+  
+  @media (max-width: 767px) {
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+    }
+    .navigation {
+      width: 100%;
+      margin-top: 1rem;
+    }
+    .navigation ul {
+      display: none;
+    }
+    .navigation ul.show {
+      display: block;
+    }
+  
+    .navigation ul li {
+      display: block;
+    }
+    .navigation ul li a {
+      display: block;
+      padding: 0.5rem;
+      transition: all 0.4s linear;
+      border-radius: 5px;
+    }
+    .navigation ul li a:hover {
+      background: #4a4a4a;
+    }
+    .logo {
+      letter-spacing: 1px;
+      font-size: 1.3em;
+    }
+  }
+}
+@media (min-width: 768px) {
+    .containercard {
+      width: 80%;
+    }
+    .navigation ul li a {
+      display: block;
+      padding: 0.5em;
+      align-items: baseline;
+      font-size: large;
+      transition: all 0.4s linear;
+      border-radius: 5px;
+    }
+  
+  } 
+@media (min-width: 850px) {
+    .containercard {
+      width: 95%;
+      grid-template-columns: repeat(3, 1fr);
+    }
+}
